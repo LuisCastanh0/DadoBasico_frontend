@@ -6,11 +6,11 @@ export default function NavBar() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-lg font-bold">
-          <Link href="/">Gestor de Tabelas</Link>
+          <Link href="/">Dado Básico</Link>
         </div>
 
         {/* Links */}
-        <div className="flex space-x-4">
+        <div className="flex space-x-16">
           <Link href="/create-table">Criar Tabela</Link>
           <Link href="/add-row">Adicionar Linha</Link>
           <Link href="/create-relationship">Criar Relacionamento</Link>
