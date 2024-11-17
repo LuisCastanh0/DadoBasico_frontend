@@ -10,10 +10,25 @@ export default function NavBar() {
         </div>
 
         {/* Links */}
-        <div className="flex space-x-16">
-          <Link href="/create-table">Criar Tabela</Link>
-          <Link href="/add-row">Adicionar Linha</Link>
-          <Link href="/create-relationship">Criar Relacionamento</Link>
+        <div className="justify-center w-full flex space-x-12">
+          <Link href="/create-table" className="hover:text-gray-200">
+            Criar Tabela
+          </Link>
+          <Link href="/add-row" className="hover:text-gray-200">
+            Adicionar Linha
+          </Link>
+          <Link href="/create-relationship" className="hover:text-gray-200">
+            Criar Relacionamento
+          </Link>
+          <Link href="/manage-tables" className="hover:text-gray-200">
+            Gerenciar Tabelas
+          </Link>
+          <Link href="/manage-ativos" className="hover:text-gray-200">
+            Consultar Tabela 
+          </Link>
+          <Link href="/manage-relationships" className="hover:text-gray-200">
+            Gerenciar Relacionamentos
+          </Link>
         </div>
       </div>
     </nav>
