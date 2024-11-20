@@ -96,7 +96,7 @@ export default function ManageRelationships() {
               setSelectedAsset('');
               setRelationships([]);
             }}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full px-4 py-2 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
             <option value="">Selecione uma Classe</option>
             {classes.map((classe) => (
@@ -117,7 +117,7 @@ export default function ManageRelationships() {
               <select
                 value={selectedAsset}
                 onChange={(e) => setSelectedAsset(e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-4 py-2 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="">Selecione um Ativo</option>
                 {assets.map((asset) => (
@@ -139,10 +139,10 @@ export default function ManageRelationships() {
             ) : relationships.length > 0 ? (
               <ul className="bg-white shadow-md rounded-lg p-4">
                 {relationships.map((rel) => (
-                  <li key={`${rel.origemId}-${rel.destinoId}-${rel.tipo}`} className="flex justify-between items-center border-b last:border-none py-2">
+                  <li key={`${rel.origemId}-${rel.destinoId}-${rel.tipo}`} className="flex justify-between text-black items-center border-b last:border-none py-2">
                     <div>
                       <p className="text-black font-medium">Tipo: {rel.tipo}</p>
-                      <p className="text-gray-600 text-sm">
+                      <p className="text-black text-sm">
                         Origem: {rel.origemId} | Destino: {rel.destinoId}
                       </p>
                     </div>
